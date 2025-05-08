@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leet Code</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        body {
+            background-color: rgb(228, 226, 226);
+        }
+        header {
+            font-family: Arial;
+            font-size: 16px;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+        }
+        header span {
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+        .js {
+            background-color: goldenrod;
+            padding: 2px;
+            color:white;
+            border-radius: 2px;
+        }
+        .btn-premium {
+            background-color: rgb(252, 245, 206);
+            color:red;
+            padding: 5px;
+            border:1px solid gray;
+            border-radius: 5px;
+        }
+        .bi-bug, .bi-play, .bi-cloud-arrow-up, .bi-file {
+            background-color: rgb(228, 227, 227);
+            padding: 5px;
+            border-radius: 2px;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+        .bi-cloud-arrow-up {
+            color:green;
+        }
+        section {
+            height: 500px;
+            display: grid;
+            grid-template-columns: 6fr 6fr;
+            grid-gap: 10px;
+            margin-top: 10px;
+        }
+        .panel-left, .panel-right {
+            background-color: rgb(248, 244, 244);
+            border-radius: 5px;
+            overflow: auto;
+            height: 500px;
+            padding: 10px;
+            font-family: Arial;
+        }
+        h1 {
+            font-family: monospace;
+            font-size: 22px;
+        }
+        .btn-easy, .bi-lock {
+            background-color: rgb(228, 227, 227);
+            padding: 5px;
+            border-radius: 5px;
+            color:darkcyan;
+        }
+        samp {
+            background-color: rgb(228, 227, 227);
+            padding: 5px;
+        }
+        p {
+            line-height: 30px;
+        }
+        dt {
+            font-weight: bold;
+        }
+        .left-panel-header {
+            padding: 5px;
+        }
+        .left-panel-header span {
+            padding-right: 10px;
+        }
+        ol li {
+            color:darkcyan;
+            line-height: 25px;
+        }
+        var {
+            color:green;
+        }
+        .var {
+            color:blue;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <span class="js">JS</span>
+            <span>30 Days of JavaScript</span>
+            <span class="bi bi-chevron-left"></span>
+            <span class="bi bi-chevron-right"></span>
+            <span class="bi bi-shuffle"></span>
+        </div>
+        <div>
+            <span class="bi bi-bug"></span>
+            <span class="bi bi-play"> Run </span>
+            <span class="bi bi-cloud-arrow-up"> Submit </span>
+            <span class="bi bi-file"></span>
+        </div>
+        <div>
+            <span class="bi bi-columns-gap"></span>
+            <span class="bi bi-gear"></span>
+            <span> Register </span>
+            <span> or </span>
+            <span> Sign In</span>
+            <span class="btn-premium"> Premium </span>
+        </div>
+    </header>
+    <section>
+        <div class="panel-left">
+            <div class="left-panel-header">
+                <span class="bi bi-file-binary"> Description </span>
+                <span class="bi bi-book"> Editorial </span>
+                <span class="bi bi-funnel"> Solutions </span>
+                <span class="bi bi-clock-history"> Submissions </span>
+            </div>
+            <h1>2667. Create Hello World Function </h1>
+            <div>
+                <span class="btn-easy">Easy</span>
+                <span class="bi bi-lock"> Companies </span>
+            </div>
+            <div>
+                <p>Write a function <samp>createHelloWorld.</samp> It should return a new function that always returns <samp>"Hello World".</samp></p>
+            </div>
+            <div>
+                <dl>
+                    <dt>Example 1 :</dt>
+                    <dd>
+                        <pre>
+Input: args = []
+Output: "Hello World"
+Explanation:
+const f = createHelloWorld();
+f(); // "Hello World"
+
+The function returned by createHelloWorld should always return "Hello World".
+                        </pre>
+                    </dd>
+                    <dt>Example 2</dt>
+                    <dd>
+                        <pre>
+                            Input: args = [{},null,42]
+Output: "Hello World"
+Explanation:
+const f = createHelloWorld();
+f({}, null, 42); // "Hello World"
+
+Any arguments could be passed to the function but it should <br>still always return "Hello World".
+                        </pre>
+                    </dd>
+                    <dt>Constraints</dt>
+                </dl>
+            </div>
+        </div>
+        <div class="panel-right">
+            <ol>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li> <span class="var">var</span> <var>createHelloWorld</var> = <span class="var">function()</span> { } </li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ol>
+        </div>
+    </section>
+</body>
+</html>
